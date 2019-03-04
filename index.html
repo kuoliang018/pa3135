@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<title>CSE 135</title>
+
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+        
+        <form action="http://104.248.70.89:8083/hellodata" method="GET">
+                Response: <input type = "text" name = "response"><br>
+                <button type="submit">go</button>
+        </form>
+        
+        <form id = "echo" action="http://104.248.70.89:8083/echo">
+                <label>first name: </label>
+                <input id = "firstname" type = "text" name = "firstname"><br>
+                <label>last name: </label>
+                <input id = "lastname" type = "text" name = "lastname"><br>                
+                <label>choosing your method: </label>
+                <select name = "choose_method" id = "choose_method">
+                        <option value="get">get</option>
+                        <option value="post">post</option>
+                </select>
+                <br>                
+                <label>choosing your color: </label>                
+                <select name = "choose_color" id = "choose_color"> 
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                </select>
+                <button id = "submit_btn" type="submit">submit</button>                                                                                
+        </form>                
+ <script src="scripts/main.js"></script>
+</body>
+</html>
+
